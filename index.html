@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width   , initial-scale=1.0">
+    <title>Honorato Grill</title>
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Inter:wght@300;400;700&display=swap"rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+  <!--Bootstrap via CDN-->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+
+    <style>
+        body, header, main {
+            padding: 0;
+            margin: 0;
+        }
+        .text-cinza {
+            color: #e0dede;
+        }
+        .text-red{
+            color: #ce1212;
+        }
+        .bg-red {
+          background-color: #ce1212;
+        }
+        .bg-cinza {
+            background-color: #e0dede;
+        }
+        .font-family {
+            font-family: Roboto, sans-serif;
+        }
+        .font-amatic {
+            font-family: 'Amatic SC', cursive;
+        }
+        .link-menu {
+            text-decoration: none;
+            color: #222221;
+            padding: 4px;
+            border-bottom: 2px solid #ce1212;
+        }
+        h4 {
+          margin-top: 10px;
+        }
+        p {
+          margin: 0;
+        }
+        .div-hover {
+          transition: 0.5s;
+        }
+        .div-hover:hover {
+          color: #ce1212;
+          transform: scale(1.06);
+        }
+        
+    </style>
+
+<header class="bg-white">
+      <nav class="navbar fixed-top navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand text-red mx-2 fw-bold border-bottom-1 border-red div-hover" href="#">HONORATO GRILL'S</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+        <ul class="navbar-nav mx-auto mb-2 mb-lg-0  rounded-3 p-2">
+          <li class="nav-item">
+            <a class="nav-link active " aria-current="page" href="#">Início</a>
+          </li>
+           <li class="nav-item">
+            <a class="nav-link active " aria-current="page" href="#sobre">Sobre</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active " aria-current="page" href="#nosso-diferencial">Nosso Diferencial</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active " aria-current="page" href="#eventos">Eventos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#cozinheiros">Cozinheiros</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#galeria">Galeria</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#menu-cardpaio" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Cardápio
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#prato-card">Entrada</a></li>
+              <li><a class="dropdown-item" href="#prato-card">Carnes</a></li>
+              <li><a class="dropdown-item" href="#prato-card">Guarnições</a></li>
+              <li><a class="dropdown-item" href="#prato-card">Massas</a></li>
+              <li><a class="dropdown-item" href="#prato-card">Bebidas</a></li>
+              <li><a class="dropdown-item" href="#prato-card">Sobremesas</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- LINK DO CARRINHO DE COMPRAS E O LINKEDIN-->
+    <a href=""><i class="bi bi-linkedin text-red text-decoration-none w-100 div-hover ms-0 pe-4 fs-2 d-flex"></i></a>
+    <a href=""><i  class="bi bi-cart-check text-red w-100 div-hover m-1 pe-4 fs-2 d-flex"></i></a>
+  </nav>
+</header>
+
+<!-- BUTTOOM DO WHATSAPP PARA ENVIAR MENSAGEM AO STABELECIMENTO-->
+<article>
+<a href="https://wa.me/85992606939" target="_blank" 
+   class="bg-success rounded-circle position-fixed bottom-0 end-0 m-4 shadow position-relative z-3"
+   style="width: 60px; height: 60px; display: flex; align-items: center; justify-content: center;">
+   <i style="font-size: 40px" class="bi bi-whatsapp lin text-white text-center pb-1"></i>
+</a>
+</article>
+
+<!-- SECTION PARA CRIAR HEIGHT ENTRE NABVAR E A MAIN-->
+<section style="height: 70px"></section>
+
+<body>
+    <main style="height: 650px" class="container-fluid bg-body-secondary">
+        <div class="row align-items-center ps-5 ms-3">
+            <div class="col-12 col-md-6 col-lg-6 p-2 my-2 text-sm-cente justify-content-sm-center mt-sm-3">
+                <h1 class="font-amatic text-red fw-bold display-1">Honorato Grill's<br></h1><br>
+                <p>Mais do que um restaurante, somos um lugar onde sabores se transformam <br> em experiências.  Cada prato é preparado com dedicação para encantar seu paladar.</p>
+              <a href="https://wa.me/85992606938" target="_blank"><button class="btn btn-danger text-light 
+              rounded-pill px-4 mt-3 text-red fw-bold div-hover">Fazer sua Reserva</button>
+            </a>
+            <a href=""><button class="btn text-dark fw-bold text-center pt-1 mt-2"><i
+                class="bi bi-play-circle text-red fs-4 align-middle"></i> Videos</button></a>
+            </div>
+            <div class="col-6 pt-3 mt-1 ">
+                <img src="/Modulo 1/Aula09/Desafio09/img/hero-img.png" class="img-fluid div-hover" alt="...">
+            </div>
+        </div>
+    </main>
+
+        <!-- SECTION SOBRE O ESTABELECIMENTGO E RESERVAS -->
+    <section id="sobre"  style="height: 170px;" class="container pt-5 ">
+        <div class="row text-center  pt-3">
+            <p class="text-secondary text-uppercase">Sobre Nós</p>
+            <h1  class="font-amatic display-4 p-2" > <span  class="text-danger">Honorato Grill's</span></h1>
+        </div>
+    </section>
+
+    <div class="container my-0 my-md-2 my-lg-5">
+        <div class="row">
+
+            <div class="col-12 col-md-6 col-lg-6  pt-4">
+                <img src="/Modulo 1/Aula09/Desafio09/img/about.jpg" class="img-fluid w-100 rounded-3 div-hover" alt="Restaurante">
+
+                <div class="border border-3 border-body text-center p-3 mt-3 ">
+                    <p class="mb-1 text-secondary text-uppercaset">Reserva sua Mesa</p>
+                    <h5 class="text-danger mb-sm-2">+11 5589 55488 55</h5>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-6 text-center">
+                <p class="pb-3 fs-5">
+                    Não oferecemos apenas comidas, mas experiências únicas:
+                </p>
+                <ul class="list-unstyled">
+                    <li class="mb-2"><i class="bi bi-check2-square"></i> Pratos feitos com ingredientes frescos</li>
+                    <li class="mb-2"><i class="bi bi-check2-square"></i> Ambiente confortável e elegante</li>
+                    <li class="mb-2"><i class="bi bi-check2-square"></i> Equipe com atendimeento especializada</li>
+                </ul>
+                <p>
+                    Nosso restaurante oferece um ambiente aconchegante,<br> moderno e perfeito para momentos especiais.
+                </p>
+                <p>
+                   Nossa culinária combina ingredientes frescos e selecionados,<br> trazendo sabores incríveis que agradam todos os paladares.
+                </p>
+                <div class=" mt-4">
+                    <img src="/Modulo 1/Aula09/Desafio09/img/about-2.jpg"
+                     class="img-fluid w-75 rounded-3 div-hover" alt="Comida">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- CARDS SOBRE VALORES, MISSÃO E VISÃO HONORATO GRILL -->
+  <section id="nosso-diferencial" class="bg-body-tertiary py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="bg-red text-white p-5 h-100 rounded shadow-lg p-2 mb-5 div-hover">
+            <h2 class="fw-bold mb-4">Proprietário Honorato Grill's</h2>
+            <p>Wanderson Honorato Araujo, 27 anos, excelente filho, muito bem casado e servo de um Deus maravilhoso. <span>Desenvolvedor Fullstack (Java/Spring/React.JS/Angular.JS), cursando o 6° semestre de Engenharia de Software</span>, meu objetivo é trazer soluções através de tecnologias de ponta foco em escalabilidade.</p>
+            <a href="https://www.linkedin.com/in/wanderson-honorato/" target="_blank" class="text-decoration-none"><button class="btn btn-light d-flex rounded-pill px-4 mt-3 text-red fw-bold div-hover">Saiba Mais</button></a>
+          </div>
+        </div>
+        <div class="col-md-8 row text-center">
+          <div class="col-md-4">
+            <div class="bg-white p-4 h-100 shadow-lg pb-2 mb-5 div-hover">
+              <i class="bi bi-clipboard-data fs-1 text-red"></i>
+              <h5 class="mt-3">Missão</h5>
+              <p class="small text-secondary pt-2">Preservar o legado da família Honorato, oferecendo uma experiência gastronômica excepcional que une tradição e inovação e muito amor em cada refeição</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="bg-white p-4 h-100 shadow-lg pb-2 mb-5 div-hover">
+              <i class="bi bi-gem fs-1 text-red"></i>
+              <h5 class="mt-3">Valores</h5>
+              <p class="small text-secondary  pt-1">Encantar gerações, celebrar a tradição, cultivar elegância e carinho – Porque no Honorato Grill's, acreditamos que cada refeição é uma oportunidade de tocar almas, de manter viva a essência de quem somos, e de transformar o simples em extraordinário, com o mesmo carinho e sofisticação que nos acompanham desde o início.</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="bg-white p-4 h-100 shadow-lg pb-2 mb-5 div-hover">
+              <i class="bi bi-inboxes fs-1 text-red"></i>
+              <h5 class="mt-3">Visão</h5>
+              <p class="small text-secondary pt-2">Encantar gerações com uma experiência gastronômica que celebra a tradição e o carinho, mantendo viva a essência e a elegância dos ensinamentos da Dona Célia Honorato em cada detalhe.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+    <!-- OVERFLOW e OBJECT-FIT-->
+     
+    <article style="height: 300px; overflow: hidden; object-fit: cover;" class="container-fluid d-flex justify-content-center">
+        <div>
+            <img src="img/stats-bg.jpg" class=".img-fluid div-hover" alt="">
+        </div>
+    </article>
+
+
+    <section style="height: 230px;" class="container align-content-center">
+        <div class="row"></div>
+        <div class="col text-center pt-4 mt-3 ">
+            <span class="text-secondary text-uppercase">FEITO A MÃO, COM O CORAÇÃO</span>
+            <h1 class="text-center font-amatic display-4 mt-2">Nosso <span class="text-danger">Delicioso Cardápio</span></h1>
+        </div>  
+
+        <!-- MENU DO CARDÁPIO -->
+
+        <nav class="navbar text-center justify-content-center ">
+            <nav class="navbar">
+\                <div class="container-fluid ">
+                    <div class="row text-center d-flex">
+                        <div class="col-sm-12 col-md-6 col-lg-12">
+                            <span><a href="" class="link-menu">Entradas</a></span>
+                        </div>
+                        <div class="col-sm-12 col-md-6 col-lg-12">
+                            <a href="" class="link-menu">Carnes</a>
+                        </div>
+                        <div class="col-sm1-12 col-md-6 col-lg-12">
+                            <a href="" class="link-menu">Guarnições</a>
+                        </div>
+                        <div class="col-sm-12 col-md-6 col-lg-12">
+                            <a href="" class="link-menu">Massas</a>
+                        </div>
+                         <div class="col-sm-12 col-md-6 col-lg-12">
+                            <a href="" class="link-menu">Bebidas</a>
+                        </div>
+                         <div class="col-sm-12 col-md-6 col-lg-12">
+                            <a href="" class="link-menu">Sobremesas</a>
+                        </div>
+                    </div>
+            </nav>
+    </section>
+
+      <!-- CARDÁPIO -->
+    <section id="prato-card"  style="height: 900px;" class="container-fluid bg-white text-center justify-content-cente mt-4 mb-4">
+      <div class="row"> 
+        <div class="col">
+            <span class="fw-semibold text-secondary text-uppercase">MENU</span>
+            <h1><span class="text-danger display-4 font-amatic">Entradas</span></h1>
+        </div>
+    </div>
+    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+
+        <div class="row d-flex ">
+            <div id="prato-card" class="card-group ">
+            <div class="col-4 my-3">
+                <a href=""><img class="rounded v-25 w-50 mb-2  div-hover" src="/Modulo 1/Aula09/Desafio09/img/menu/menu-item-1.png" alt=""></a>
+                <h4  class="">Magnam Tiste</h4>
+                <p>Lorem, deren, trataro, filede, nerada</p>
+                <span class="text-red fs-2 fw-bold ">R$ 25,99</span>
+            </div>
+            <div class="col-4 my-3">
+                <a href=""><img class="rounded v-25 w-50 mb-2 div-hover" src="/Modulo 1/Aula09/Desafio09/img/menu/menu-item-2.png" alt=""></a>
+                  <h4 class="">Magnam Tiste</h4>
+                <p>Lorem, deren, trataro, filede, nerada</p>
+                <span class="text-red fs-2 fw-bold">R$ 25,99</span>
+            </div>
+            <div class="col-4 my-3">
+                <a href=""><img class="rounded v-25 w-50 mb-2 div-hover" src="/Modulo 1/Aula09/Desafio09/img/menu/menu-item-3.png" alt=""></a>
+                <h4  class="">Magnam Tiste</h4>
+                <p>Lorem, deren, trataro, filede, nerada</p>
+                <span class="text-red fs-2 fw-bold">R$ 25,99</span>
+            </div>
+        </div>
+            <div id="prato-list" class="card-group">
+            <div class="col-4 my-3">
+               <a href=""> <img class="rounded v-25 w-50 div-hover" 
+                src="/Modulo 1/Aula09/Desafio09/img/menu/menu-item-4.png" alt=""></a>
+                <h4  class="">Magnam Tiste</h4>
+                <p>Lorem, deren, trataro, filede, nerada</p>
+                <span class="text-red fs-2 fw-bold">R$ 25,99</span>
+            </div>
+            <div class="col-4 my-3">
+               <a  href=""> <img class="rounded v-25 w-50 div-hover" 
+                src="/Modulo 1/Aula09/Desafio09/img/menu/menu-item-5.png" alt=""></a>
+                <h4  class="">Magnam Tiste</h4>
+                <p>Lorem, deren, trataro, filede, nerada</p>
+                <span class="text-red fs-2 fw-bold">R$ 25,99</span>
+            </div>
+            <div class="col-4 my-3">
+                <a  href=""><img class="rounded v-25 w-50 div-hover" 
+                src="/Modulo 1/Aula09/Desafio09/img/menu/menu-item-6.png" alt=""></a>
+                <h4  class="">Magnam Tiste</h4>
+                <p>Lorem, deren, trataro, filede, nerada</p>
+                <span class="text-red fs-2 fw-bold">R$ 25,99</span>
+            </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION DOS DEPOIMENTOS E COMENTÁRIOS DOS CLIENTES-->
+      <section style="height: 380px;" id="eventos" class="d-flex justify-content-center mt-5 py-5">
+    <div id="carouselDepoimentos" class="carousel slide" data-bs-ride="carousel">
+
+       <!-- O carousel indicators vai fazer o papel do controlar dos button com slides dos depoimentos-->
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselDepoimentos" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselDepoimentos" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselDepoimentos" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+
+      <div style="max-width: 800px;" class="carousel-inner p-4 my-2 bg-body-tertiary">
+        <h2 class="font-amatic display-4 text-center">depoimentos - <span class="text-danger">Clientes</span></h2>
+
+    <!-- Depoimentos Slide 1 -->
+        <div class="carousel-item active">
+          <div class="row align-items-center">
+            <div class="col-9">
+              <p class="fst-italic">
+                <i class="bi bi-quote text-danger"></i> Lorem ipsum dolor sit amet, consectetur adipiscing elite ipsum dolor sit amet, consectetur adipisci...
+                <i class="bi bi-quote text-danger" style="transform: scaleX(-1); display: inline-block;"></i>
+              </p>
+              <small class="text-secondary text-uppercase">Ronaldinho Gaúcho   <i class="bi bi-star-fill text-warning"></i><i
+                  class="bi bi-star-fill text-warning"></i><i class="bi bi-star-fill text-warning"></i><i
+                  class="bi bi-star-fill text-warning"></i><i class="bi bi-star-fill text-warning"></i></small>
+            </div>
+            <div class="col-3">
+              <img class="rounded-circle img-fluid"
+                src="/Modulo 1/Aula09/Desafio09/img/testimonials/ronaldinho-6.png" alt="Cliente 1">
+            </div>
+          </div>
+        </div>
+
+        <!-- Depoimentos Slide 2 -->
+        <div class="carousel-item">
+          <div class="row align-items-center">
+            <div class="col-9">
+              <p class="fst-italic">
+                <i class="bi bi-quote text-danger"></i> Lorem ipsum dolor sit amet, consectetur adipiscing elite ipsum dolor sit amet, consectetur adipisci...
+                <i class="bi bi-quote text-danger" style="transform: scaleX(-1); display: inline-block;"></i>
+              </p>
+              <small class="text-secondary text-uppercase">Cristiano Ronaldo   <i class="bi bi-star-fill text-warning"></i><i
+                  class="bi bi-star-fill text-warning"></i><i class="bi bi-star-fill text-warning"></i><i
+                  class="bi bi-star-fill text-warning"></i><i class="bi bi-star-fill text-warning"></i></small>
+            </div>
+            <div class="col-3">
+              <img class="rounded-circle img-fluid"
+                src="/Modulo 1/Aula09/Desafio09/img/testimonials/cristiano-7.png" alt="Cliente 2">
+            </div>
+          </div>
+        </div>
+
+        <!-- Depoimentos Slide 3 -->
+        <div class="carousel-item">
+          <div class="row align-items-center">
+            <div class="col-9">
+              <p class="fst-italic">
+                <i class="bi bi-quote text-danger"></i> Lorem ipsum dolor sit amet, consectetur adipiscing elite ipsum dolor sit amet, consectetur adipisci...
+                <i class="bi bi-quote text-danger" style="transform: scaleX(-1); display: inline-block;"></i>
+              </p>
+              <small class="text-secondary text-uppercase">Neymar Jr <i class="bi bi-star-fill text-warning"></i><i
+                  class="bi bi-star-fill text-warning"></i><i class="bi bi-star-fill text-warning"></i><i
+                  class="bi bi-star-fill text-warning"></i><i class="bi bi-star-fill text-warning"></i></small>
+            </div>
+            <div class="col-3">
+              <img class="rounded-circle img-fluid border border-1 border-black"
+                src="/Modulo 1/Aula09/Desafio09/img/testimonials/neymar-9.png" alt="Cliente 3">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselDepoimentos" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon bg-dark rounded-circle" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselDepoimentos" data-bs-slide="next">
+        <span class="carousel-control-next-icon bg-dark rounded-circle" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </section>
+ 
+
+
+   <!-- SECTION DO CARROSEL DE FOTOS DOS EVENTOS -->
+
+  <div id="carouselExampleAutoplaying" class="carousel slide z-1" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <!--Define o time para passar os slides-->
+      <div class="carousel-item active" data-bs-interval="2000">
+        <!-- Primeiro card -->
+        <div class="card-group">
+          <div class="card">
+            <img  src="/Modulo 1/Aula09/Desafio09/img/events-1.jpg" class="card-img-top img-fluid" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Foto 1</h5>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                content. This content is a little bit longer.</p>
+              <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+            </div>
+          </div>
+          <div class="card">
+            <img src="/Modulo 1/Aula09/Desafio09/img/events-2.jpg"
+              class="card-img-top" alt="..." >
+            <div class="card-body">
+              <h5 class="card-title">Foto 2</h5>
+              <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+              <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+            </div>
+          </div>
+          <div class="card">
+            <img src="/Modulo 1/Aula09/Desafio09/img/events-3.jpg"
+              class="card-img-top" alt="..." >
+            <div class="card-body">
+              <h5 class="card-title">Foto 3</h5>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                content. This card has even longer content than the first to show that equal height action.</p>
+              <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+            </div>
+          </div>
+        </div>
+        <!-- Fim do primeiro Card -->
+      </div>
+      <div class="carousel-item" data-bs-interval="2000">
+        <!-- Segundo Card -->
+        <div class="card-group">
+          <div class="card">
+            <img src="/Modulo 1/Aula09/Desafio09/img/events-2.jpg" class="card-img-top" alt="..." >
+            <div class="card-body">
+              <h5 class="card-title">Foto 4</h5>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                content. This content is a little bit longer.</p>
+              <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+            </div>
+          </div>
+          <div class="card">
+            <img src="/Modulo 1/Aula09/Desafio09/img/events-1.jpg"
+              class="card-img-top" alt="..." >
+            <div class="card-body">
+              <h5 class="card-title">Foto 5</h5>
+              <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+              <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+            </div>
+          </div>
+          <div class="card">
+            <img src="/Modulo 1/Aula09/Desafio09/img/events-3.jpg"
+              class="card-img-top" alt="..." >
+            <div class="card-body">
+              <h5 class="card-title">Foto 6</h5>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                content. This card has even longer content than the first to show that equal height action.</p>
+              <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+            </div>
+          </div>
+        </div>
+        <!-- fim do card -->
+      </div>
+      <div class="carousel-item" data-bs-interval="2000">
+        <!-- iniicio do card -->
+        <div class="card-group">
+          <div class="card">
+            <img src="/Modulo 1/Aula09/Desafio09/img/events-2.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Foto 7</h5>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                content. This content is a little bit longer.</p>
+              <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+            </div>
+          </div>
+          <div class="card">
+            <img src="/Modulo 1/Aula09/Desafio09/img/events-2.jpg"
+              class="card-img-top" alt="..." >
+            <div class="card-body">
+              <h5 class="card-title">Foto 8</h5>
+              <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+              <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+            </div>
+          </div>
+          <div class="card">
+            <img src="/Modulo 1/Aula09/Desafio09/img/events-1.jpg"
+              class="card-img-top" alt="..." >
+            <div class="card-body">
+              <h5 class="card-title">Foto 9</h5>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                content. This card has even longer content than the first to show that equal height action.</p>
+              <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+            </div>
+          </div>
+        </div>
+        <!-- fim do card -->
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+      data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+      data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+<!--SECTION CHEFS-->
+
+<section id="cozinheiros" class="bg-light py-5 text-center">
+    <div class="container">
+      <span class="text-secondary text-uppercase">Chefs</span>
+      <h3 class="font-amatic display-4 mb-5">Nossos <span class="text-red">Chefs Profissionais</span></h3>
+
+      <div class="row"> 
+        <div class="col-md-4">
+          <div class="card border-0 shadow-lg p-2 mb-5 div-hover">
+            <img src="/Modulo 1/Aula09/Desafio09/img/chefs/carlos-bertolazzi.png" class="card-img-top" alt="">
+            <div class="card-body">
+              <h5 class="card-title">Carlos Bertolazzi</h5>
+              <span class="text-secondary">Chef</span>
+              <p class="card-text mt-2">Velit aut quia fugit et et. Dolorum ea voluptate vel tempore tenetur ipsa quae
+                aut.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card border-0 shadow-lg p-2 mb-5 div-hover">
+            <img src="/Modulo 1/Aula09/Desafio09/img/chefs/ana-maria-braga.jpg" class="card-img-top " alt="">
+            <div class="card-body">
+              <h5 class="card-title">Ana Maria Braga</h5>
+              <span class="text-secondary">Chef</span>
+              <p class="card-text mt-2">Quo esse repellendus quia id. Est eum et accusantium est voluptas.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div  class="card border-0 shadow-lg p-2 mb-5 div-hover">
+            <img src="/Modulo 1/Aula09/Desafio09/img/chefs/erick-jacquin.jpg" class="card-img-top w-100" alt="">
+            <div class="card-body">
+              <h5 class="card-title">Érick Jacquin</h5>
+              <span class="text-secondary">Master Chef</span>
+              <p class="card-text mt-2">Vero omnis qoud consequatur. Voluptas nemo aut omnis delectus neque.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section style="height: 150px;" class="container bg-white  border-black mt-2">
+        <div class="row text-center p-4">
+            <p class="text-secondary">RESERVAS</p>
+            <h1 id="About" class="font-amatic display-4" >Reserve <span class="text-danger">Seu Momento Conosco</span></h1>
+        </div>
+  </section>
+
+  <!-- Seção de Reserva -->
+  <section class="container py-4">
+    <div class="row g-0 shadow">
+      <div class="col-md-4">
+        <img src="/Modulo 1/Aula09/Desafio09/img/reservation.jpg"  class="img-fluid w-75 object-fit-cover div-hover"
+          alt="">
+      </div>
+      <div class="col-md-8 p-5 bg-white">
+        <form class="row g-3">
+          <div class="col-md-4">
+            <input type="text" name="name" id="name" class="form-control" placeholder="Seu nome" required></div>
+          <div class="col-md-4">
+            <input type="email" name="email" id="email" class="form-control" placeholder="wanderson@gmail.com" required></div>
+          <div class="col-md-4">
+            <input type="text" name="phone" id="phone" class="form-control" placeholder="99 9 99999999" required></div>
+          <div class="col-md-4">
+            <input type="date" name="date" id="reservation-date" class="form-control" required></div>
+          <div class="col-md-4">
+            <input type="time" name="time" id="reservation-time" class="form-control" required></div>
+          <div class="col-md-4">
+            <input type="number" name="people" id="people" class="form-control" placeholder="Nº de pessoas" min="0" required></div>
+          <div class="col-12">
+            <textarea class="form-control" name="message" id="message" rows="5" placeholder="Messagem" required></textarea></div>
+          <div class="col-12 text-center mt-4">
+            <div class="row">
+              <div class="col-12">
+                  <button class="btn btn-danger btn-lg" type="submit" value="">Reservar</button>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!--SECTION DE IMAGENS DO ESTABELECIMENTO INTERNO-->
+  <section id="galeria" style="height: 550px;" class="container text-center justify-content-center bg-body-secundary my-4">
+    <div class="row">
+      <div class="col">
+        <p class="text-secondary text-uppercase">GALERIA</p>
+        <h1 class=" font-amatic display-4">Confira nossa <span class="text-red">Galeria</span></h1>
+      </div>
+    </div>
+
+ <div class="row">
+    <div class="col px-5 mt-4 mx-3">
+     <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner ">
+    
+    <div class="carousel-item active" data-bs-interval="2000">
+      <img src="/Modulo 1/Aula09/Desafio09/img/gallery/gallery-1.jpg" class="d-block w-100 div-hover" style="height: 400px; object-fit: cover;"   alt="Galeria de fotos do ambiente">
+    </div>
+    <div class="carousel-item" data-bs-interval="2000">
+      <img src="/Modulo 1/Aula09/Desafio09/img/gallery/gallery-2.jpg" class="d-block w-100 div-hover" style="height: 400px; object-fit: cover;"  alt="Galeria de fotos do ambiente">
+    </div>
+    <div class="carousel-item" data-bs-interval="000">
+      <img src="/Modulo 1/Aula09/Desafio09/img/gallery/gallery-3.jpg" class="id-block w-100 div-hover" style="height: 400px; object-fit: cover;"  alt="Galeria de fotos do ambiente">
+    </div>
+        <div class="carousel-item" data-bs-interval="2000">
+      <img src="/Modulo 1/Aula09/Desafio09/img/gallery/gallery-4.jpg" class="d-block w-100 div-hover" style="height: 400px; object-fit: cover;"  alt="Galeria de fotos do ambiente">
+    </div>
+        <div class="carousel-item" data-bs-interval="2000">
+      <img src="/Modulo 1/Aula09/Desafio09/img/gallery/gallery-5.jpg" class="d-block w-100 div-hover" style="height: 400px; object-fit: cover;"  alt="Galeria de fotos do ambiente">
+    </div>
+      <div class="carousel-item" data-bs-interval="2000">
+      <img src="/Modulo 1/Aula09/Desafio09/img/gallery/gallery-6.jpg" class="d-block w-100 div-hover" style="height: 400px; object-fit: cover;"  alt="Galeria de fotos do ambiente">
+    </div>
+    <div class="carousel-item" data-bs-interval="2000">
+      <img src="/Modulo 1/Aula09/Desafio09/img/gallery/gallery-7.jpg" class="d-block w-100 div-hover"  style="height: 400px; object-fit: cover;" alt="Galeria de fotos do ambiente">
+    </div>
+    <div class="carousel-item" data-bs-interval="2000">
+      <img src="/Modulo 1/Aula09/Desafio09/img/gallery/gallery-8.jpg" class="d-block w-100 div-hover"  style="height: 400px; object-fit: cover;" alt="Galeria de fotos do ambiente">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+  </div>
+  </div>
+  </section>
+
+   <footer style=" height: 400px" class="container-fluid bg-dark text-white mt-4 py-5 ">
+    <div class=" text-center">
+      <div class="row g-4">
+        <div class="col-md-3">
+          <i class="bi bi-geo-alt text-red fs-3"></i>
+          <h5 class="mt-3">Endereço</h5>
+          <p class="small">Av. Santos Dumont, 2626 </p>
+        </div>
+        <div class="col-md-3">
+          <i class="bi bi-telephone text-red fs-3"></i>
+          <h5 class="mt-3">Contatos para Reservas</h5>
+          <p class="small"><i class="bi bi-telephone-inbound"></i> 4002 8922 <i class="bi bi-whatsapp"></i> 85 9 92008565 <br><i class="bi bi-envelope"></i> honoratogrill@gmail.com <br> <i class="bi bi-globe2"></i> honoratogrill@site.com.br</p>
+        </div>
+        <div class="col-md-3">
+          <i class="bi bi-clock text-red fs-3"></i>
+          <h5 class="mt-3">Horario de funcionamento</h5>
+          <p class="small">Seg-Sab: 11AM - 23PM<br>Domingo: Fechado</p>
+        </div>
+        <div class="col-md-3">
+          <h5 class="mt-3">Contate-nos</h5>
+          <div class="fs-4">
+            <i class="bi bi-twitter me-2"></i>
+            <i class="bi bi-facebook me-2"></i>
+            <i class="bi bi-instagram me-2"></i>
+            <i class="bi bi-linkedin"></i>
+          </div>
+        </div>
+      </div>
+      <hr class="my-5 border-secondary">
+      <p class="small text-secondary mb-0">&copy; Todos os Direitos Reservados <strong>Wandeson Honorato Araujo</strong>.</p>
+    </div>
+  </footer>
+
+    
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+
+</html>
