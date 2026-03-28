@@ -56,42 +56,31 @@
         }
         
     </style>
-
 <header class="bg-white">
-      <nav class="navbar fixed-top navbar-expand-lg bg-body-tertiary">
-    <div class="container-fluid">
-      <a class="navbar-brand text-red mx-2 fw-bold border-bottom-1 border-red div-hover" href="#">HONORATO GRILL'S</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+  <nav class="navbar fixed-top navbar-expand-lg bg-body-tertiary">
+    
+    <div class="container-fluid d-flex align-items-center">
+
+      <!-- ÍCONES E NOME DA LOGO QUANDO TIVER NA VERSÃO DESKTOP -->
+      <div class="d-flex align-items-center">
+        <a class="navbar-brand text-red mx-2 fw-bold div-hover m-0" href="#">
+          HONORATO GRILL'S
+        </a>
+      </div>
+
+        <!-- MENU -->
       <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
-        <ul class="navbar-nav mx-auto mb-2 mb-lg-0  rounded-3 p-2">
-          <li class="nav-item">
-            <a class="nav-link active " aria-current="page" href="#">Início</a>
-          </li>
-           <li class="nav-item">
-            <a class="nav-link active " aria-current="page" href="#sobre">Sobre</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active " aria-current="page" href="#nosso-diferencial">Diferencial</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#depoimentos">Depoimentos</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active " aria-current="page" href="#eventos">Eventos</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#cozinheiros">Chefs</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#galeria">Galeria</a>
-          </li>
+        <ul class="navbar-nav mx-auto mb-2 mb-lg-0 rounded-3 p-2">
+          <li class="nav-item"><a class="nav-link active" href="#">Início</a></li>
+          <li class="nav-item"><a class="nav-link active" href="#sobre">Sobre</a></li>
+          <li class="nav-item"><a class="nav-link active" href="#nosso-diferencial">Diferencial</a></li>
+          <li class="nav-item"><a class="nav-link active" href="#depoimentos">Depoimentos</a></li>
+          <li class="nav-item"><a class="nav-link active" href="#eventos">Eventos</a></li>
+          <li class="nav-item"><a class="nav-link active" href="#cozinheiros">Chefs</a></li>
+          <li class="nav-item"><a class="nav-link active" href="#galeria">Galeria</a></li>
+
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#menu-cardpaio" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Cardápio
-            </a>
+            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Cardápio</a>
             <ul class="dropdown-menu">
               <li><a class="dropdown-item" href="#prato-card">Entrada</a></li>
               <li><a class="dropdown-item" href="#prato-card">Carnes</a></li>
@@ -103,10 +92,29 @@
           </li>
         </ul>
       </div>
+            <!-- ÍCONES QUANDO TIVER NA VERSÃO DESKTOP -->
+      <div class="d-none d-lg-flex ">
+        <a class="div-hover" href="">
+          <i class="bi bi-linkedin text-red fs-2 me-2"></i>
+        </a>
+        <a class="div-hover" href="">
+          <i class="bi bi-cart-check text-red fs-2 me-2"></i>
+        </a>
+      </div>
+        <!-- ÍCONES QUANDO TIVER NA VERSÃO MOBILE -->
+        <div class="d-flex d-lg-none ms-2">
+          <a class="div-hover" href="">
+            <i class="bi bi-linkedin text-red fs-5 me-2"></i>
+          </a>
+          <a class="div-hover" href="">
+            <i class="bi bi-cart-check text-red fs-5"></i>
+          </a>
+        </div>
+          <!-- BOTÃO HAMBURGUER -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
+        <span class="navbar-toggler-icon"></span>
+      </button>
     </div>
-    <!-- LINK DO CARRINHO DE COMPRAS E O LINKEDIN-->
-    <a href=""><i class="bi bi-linkedin text-red text-decoration-none w-100 div-hover ms-0 pe-4 fs-2 d-flex"></i></a>
-    <a href=""><i  class="bi bi-cart-check text-red w-100 div-hover m-1 pe-4 fs-2 d-flex"></i></a>
   </nav>
 </header>
 
@@ -120,28 +128,44 @@
 </article>
 
 <!-- SECTION PARA CRIAR HEIGHT ENTRE NABVAR E A MAIN-->
-<section style="height: 70px"></section>
+<section style="height: 70px">
+
+</section>
+
 
 <body>
-    <main style="height: 650px" class="container-fluid bg-body-secondary">
-        <div class="row align-items-center ps-5 ms-3">
-            <div class="col-12 col-md-6 col-lg-6 p-2 my-2 text-sm-cente justify-content-sm-center mt-sm-3">
-                <h1 class="font-amatic text-red fw-bold display-1">Honorato Grill's<br></h1><br>
-                <p>Mais do que um restaurante, somos um lugar onde sabores se transformam. <br>Cada prato é preparado com dedicação para encantar seu paladar.</p>
-              <a href="https://wa.me/85992606938" target="_blank"><button class="btn btn-danger text-light 
-              rounded-pill px-4 mt-3 text-red fw-bold div-hover">Fazer sua Reserva</button>
-            </a>
-            <a href=""><button class="btn text-dark fw-bold text-center pt-1 mt-2"><i
-                class="bi bi-play-circle text-red fs-4 align-middle"></i> Videos</button></a>
-            </div>
-            <div class="col-6 pt-3 mt-1 ">
-                <img src="img/hero-img.png" class="img-fluid div-hover" alt="...">
+
+  <!--HERO-->
+<main class="container-fluid bg-body-secondary py-4">
+    <div class="row align-items-center justify-content-center">
+        
+        <div class="col-12 col-md-6 p-4 text-center text-md-start">
+            <h1 class="font-amatic text-red fw-bold display-1">Honorato Grill's</h1>
+            <p class="mt-3">
+                Mais do que um restaurante, somos um lugar onde sabores se transformam. <br class="d-none d-md-block">
+                Cada prato é preparado com dedicação para encantar seu paladar.
+            </p>
+            <div class="d-flex flex-column flex-sm-row align-items-center justify-content-center justify-content-md-start gap-2 mt-4">
+                <a href="https://wa.me/85992606938" target="_blank" class="text-decoration-none">
+                    <button class="btn btn-danger text-light rounded-pill px-4 fw-bold div-hover">
+                        Fazer sua Reserva
+                    </button>
+                </a>
+                <a href="" class="text-decoration-none">
+                    <button class="btn text-dark fw-bold d-flex align-items-center gap-2">
+                        <i class="bi bi-play-circle text-red fs-4"></i> Videos
+                    </button>
+                </a>
             </div>
         </div>
-    </main>
+        <div class="col-12 col-md-6 text-center ps-md-4 ps-lg-4 mt-4 mt-sm-0">
+            <img src="img/hero-img.png" class="img-fluid div-hover" alt="Prato do Honorato Grill">
+        </div>
+    </div>
+</main>
 
         <!-- SECTION SOBRE O ESTABELECIMENTGO E RESERVAS -->
-    <section id="sobre"  style="height: 170px;" class="container pt-5 ">
+    <section id="sobre" class="container pt-5 ">
         <div class="row text-center  pt-3">
             <p class="text-secondary text-uppercase">Sobre Nós</p>
             <h1  class="font-amatic display-4 p-2" > <span  class="text-danger">Honorato Grill's</span></h1>
@@ -151,7 +175,7 @@
     <div class="container my-0 my-md-2 my-lg-5">
         <div class="row">
 
-            <div class="col-12 col-md-6 col-lg-6  pt-4">
+            <div class="col-12 col-md-6 col-lg-6 pt-4 ">
                 <img src="img/about.jpg" class="img-fluid w-100 rounded-3 div-hover" alt="Restaurante">
 
                 <div class="border border-3 border-body text-center p-3 mt-3 ">
@@ -222,15 +246,16 @@
   </section>
 
     <!-- OVERFLOW e OBJECT-FIT-->
-     
-    <article style="height: 300px; overflow: hidden; object-fit: cover;" class="container-fluid d-flex justify-content-center">
-        <div>
-            <img src="img/stats-bg.jpg" class=".img-fluid div-hover" alt="">
+    <article style="max-height: 300px; overflow: hidden; object-fit: cover;" class="container-fluid d-flex justify-content-center mt-sm-0">
+        <div class="row">
+          <div class="col vw-lg-100">
+            <img src="img/stats-bg.jpg" class="img-fluid div-hover" alt="">
+          </div>
         </div>
     </article>
 
 
-    <section style="height: 230px;" class="container align-content-center">
+    <section class="container align-content-center">
         <div class="row"></div>
         <div class="col text-center pt-4 my-3 ">
             <span class="text-secondary text-uppercase">FEITO A MÃO, COM O CORAÇÃO</span>
@@ -240,23 +265,23 @@
         <!-- MENU DO CARDÁPIO -->
         <nav class="navbar text-center">
                 <div class="container-fluid  justify-content-center text-center mt-4 gap-2">
-                    <div class="row d-flex">
+                    <div class="row d-flex justify-content-center text-center w-100">
                         <div class="col-sm-12 col-md-6 col-lg-2">
                             <span><a href="" class="link-menu">Entradas</a></span>
                         </div>
-                        <div class="col-sm-12 col-md-6 col-lg-2">
+                        <div class="col col-md-4 col-lg-2 mb-2">
                             <a href="" class="link-menu">Carnes</a>
                         </div>
-                        <div class="col-sm1-12 col-md-6 col-lg-2">
+                        <div class="col col-md-4 col-lg-2 mb-2">
                             <a href="" class="link-menu">Guarnições</a>
                         </div>
-                        <div class="col-sm-12 col-md-6 col-lg-2">
+                        <div class="col col-md-4 col-lg-2 mb-2">
                             <a href="" class="link-menu">Massas</a>
                         </div>
-                         <div class="col-sm-12 col-md-6 col-lg-2">
+                         <div class="col col-md-4 col-lg-2 mb-2">
                             <a href="" class="link-menu">Bebidas</a>
                         </div>
-                         <div class="col-sm-12 col-md-6 col-lg-2">
+                         <div class="col col-md-4 col-lg-2 mb-2">
                             <a href="" class="link-menu">Sobremesas</a>
                         </div>
                     </div>
@@ -277,19 +302,19 @@
 
         <div class="row d-flex ">
             <div id="prato-card" class="card-group ">
-            <div class="col-4 my-3">
+           <div class="col-12 col-md-6 col-lg-4 my-3 my-sm-1">
                 <a href=""><img class="rounded v-25 w-50 mb-2  div-hover" src="img/menu/menu-item-1.png" alt=""></a>
                 <h4  class="">Magnam Tiste</h4>
                 <p>Lorem, deren, trataro, filede, nerada</p>
                 <span class="text-red fs-2 fw-bold ">R$ 25,99</span>
             </div>
-            <div class="col-4 my-3">
+            <div class="col-12 col-md-6 col-lg-4 my-3 my-sm-1">
                 <a href=""><img class="rounded v-25 w-50 mb-2 div-hover" src="img/menu/menu-item-2.png" alt=""></a>
                   <h4 class="">Magnam Tiste</h4>
                 <p>Lorem, deren, trataro, filede, nerada</p>
                 <span class="text-red fs-2 fw-bold">R$ 25,99</span>
             </div>
-            <div class="col-4 my-3">
+            <div class="col-12 col-md-6 col-lg-4 my-3 my-sm-1">
                 <a href=""><img class="rounded v-25 w-50 mb-2 div-hover" src="img/menu/menu-item-3.png" alt=""></a>
                 <h4  class="">Magnam Tiste</h4>
                 <p>Lorem, deren, trataro, filede, nerada</p>
@@ -297,21 +322,21 @@
             </div>
         </div>
             <div id="prato-list" class="card-group">
-            <div class="col-4 my-3">
+            <div class="col-12 col-md-6 col-lg-4 my-3 my-sm-1">
                <a href=""> <img class="rounded v-25 w-50 div-hover" 
                 src="img/menu/menu-item-4.png" alt=""></a>
                 <h4  class="">Magnam Tiste</h4>
                 <p>Lorem, deren, trataro, filede, nerada</p>
                 <span class="text-red fs-2 fw-bold">R$ 25,99</span>
             </div>
-            <div class="col-4 my-3">
+            <div class="col-12 col-md-6 col-lg-4 my-3 my-sm-1">
                <a  href=""> <img class="rounded v-25 w-50 div-hover" 
                 src="img/menu/menu-item-5.png" alt=""></a>
                 <h4  class="">Magnam Tiste</h4>
                 <p>Lorem, deren, trataro, filede, nerada</p>
                 <span class="text-red fs-2 fw-bold">R$ 25,99</span>
             </div>
-            <div class="col-4 my-3">
+            <div class="col-12 col-md-6 col-lg-4 my-3 my-sm-1">
                 <a  href=""><img class="rounded v-25 w-50 div-hover" 
                 src="img/menu/menu-item-6.png" alt=""></a>
                 <h4  class="">Magnam Tiste</h4>
@@ -367,7 +392,7 @@
           <div class="row align-items-center">
             <div class="col-9">
               <p class="fst-italic">
-                <i class="bi bi-quote text-danger"></i> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit et maiores quae exercitationem iste mollitia explicabo itaque 
+                <i class="bi bi-quote text-danger"></i> Venho com minha familia constantemente, Neymar Jr e Luiz Suarez me chamam constantemente, amo o Brasil e me arrependo de ser argentino, mas esse lugar é sensacional, comida de qualidade, ambiente agradável e atendimento excelente, se eu pudesse daria 10 estrelas, mas como só tem 5, fica com as 5 mesmo.
                 <i class="bi bi-quote text-danger" style="transform: scaleX(-1); display: inline-block;"></i>
               </p>
               <small class="text-secondary">Lionel Messi <i class="bi bi-star-fill text-warning"></i><i
@@ -802,7 +827,7 @@
   </div>
   </section>
 
-   <footer style=" height: 350px" class="container-fluid bg-dark text-white mt-4 py-5 ">
+   <footer  class="container-fluid bg-dark text-white mt-4 py-5 ">
     <div class=" text-center">
       <div class="row g-4">
         <div class="col-md-3">
